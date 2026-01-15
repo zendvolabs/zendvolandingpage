@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zendvo Landing Page
 
-## Getting Started
+Zendvo is a gifting platform that enables users to send cash gifts that remain completely hidden until a predetermined unlock date and time. By using the Stellar blockchain, Zendvo transforms digital money transfers into memorable experiences filled with mystery and anticipation.
 
-First, run the development server:
+## Who is Zendvo For?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Diaspora Senders:** Specifically targeting young adults (18-35) in the US, UK, and Canada looking for a more meaningful way to send money home to Nigeria.
+- **Domestic Gifting (Future Phase):** Nigerians sending to Nigerians for birthdays, anniversaries, and holidays where surprise is key.
+- **Memorable Occasions:** Perfect for Valentine's Day, graduations, and surprise celebrations where the timing of the gift is as important as the gift itself.
+
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: Vanilla CSS with [CSS Modules](https://nextjs.org/docs/app/building-your-application/styling/css-modules)
+- **Engine**: [React Compiler](https://react.dev/learn/react-compiler) enabled for optimized performance
+- **Icons**: [Lucide React](https://lucide.dev/) (Recommended)
+
+## 📁 Project Structure
+
+```text
+src/
+├── app/            # App router, pages, and global styles
+├── components/     # Reusable UI components
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions and shared logic
+└── public/         # Static assets (images, fonts)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Benefits to the Stellar Ecosystem
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Zendvo showcases the power of Stellar through:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Stablecoin Infrastructure:** Utilizing **USDC** for value preservation, ensuring that the gift amount remains stable from creation to unlock.
+2.  **Soroban Smart Contracts:** Implementing decentralized time-locking logic that prevents early withdrawal, providing a middleman-free guarantee of the "hidden" nature of the gift.
+3.  **Low-Cost Transactions:** Leveraging Stellar's high speed and near-zero fees to ensure that more of the sender's money reaches the recipient.
+4.  **Real-World Utility:** Connecting blockchain technology directly to Nigerian bank accounts via local payout partners, driving adoption of Web3 solutions for real-world financial needs.
+5.  **Financial Inclusion:** Providing a good on/off-ramp experience that bridges global stablecoin liquidity with local financial systems.
 
-## Learn More
+## 🛠️ Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js 18+
+- npm / yarn / pnpm
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🎨 Design Philosophy
+
+Zendvo follows a "Rich Aesthetics" approach:
+
+- **Premium Typography**: Using Inter and custom font scales.
+- **Glassmorphism**: Subtle translucent surfaces and blurs.
+- **Micro-animations**: Smooth transitions and hover effects.
+- **Dark Mode**: Fully supports high-contrast dark aesthetics.

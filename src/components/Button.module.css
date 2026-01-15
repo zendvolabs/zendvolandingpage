@@ -1,0 +1,72 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  font-family: inherit;
+  outline: none;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Variants */
+.primary {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.secondary {
+  background: var(--accent);
+  color: var(--foreground);
+}
+
+.secondary:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--foreground);
+}
+
+.outline:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Sizes */
+.sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.md {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.lg {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .primary:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+  .secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
