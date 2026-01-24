@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Intro() {
     return (
-        <section className="bg-[#F8F9FD] py-20 lg:pt-32">
-            <div className="max-w-[1197px] mx-auto flex flex-col lg:flex-row items-center gap-[82px]">
+        <section className="bg-[#F8F9FD] py-10 lg:pt-20">
+            <div className="max-w-[1197px] mx-auto flex flex-col px-4 sm:px-6 lg:px-0 lg:flex-row items-center gap-4 lg:gap-[82px]">
 
                 {/* Text Content */}
-                <div className="w-full lg:w-1/2 order-2 lg:order-1">
+                <div className="w-full lg:w-1/2 order-1">
                     <h2 className="text-3xl lg:text-[35px] font-bold text-[#18181B] mb-8">
                         Introducing Zendvo: Money Gifts With Anticipation Built In
                     </h2>
@@ -37,7 +37,7 @@ export default function Intro() {
                 </div>
 
                 {/* Image */}
-                <div className="w-full lg:w-1/2 order-1 lg:order-2">
+                <div className="w-full lg:w-1/2 order-2">
                     <div className="relative rounded-2xl overflow-hidden">
                         <Image
                             src="/img/intro-img.svg"

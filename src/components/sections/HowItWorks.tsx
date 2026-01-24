@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function HowItWorks() {
     return (
-        <section className="bg-[#F8F9FD] py-20 lg:pb-32">
-            <div className="max-w-[1197px] mx-auto bg-white px-4 sm:px-6 lg:px-12 rounded-[40px] p-8 lg:p-14 flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+        <section className="bg-[#F8F9FD] py-20 px-4 sm:px-6 lg:px-12 lg:pb-32">
+            <div className="max-w-[1197px] mx-auto bg-white rounded-[40px] p-6 lg:p-14 flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
 
                 {/* Phone Mockup */}
                 <div className="w-full lg:w-1/2 flex justify-center">
@@ -31,14 +31,14 @@ export default function HowItWorks() {
                         {/* Step 1 */}
                         <div className="flex gap-6 relative z-10">
                             {/* Dotted Line connecting to next step */}
-                            <div className="absolute left-5 top-10 h-full w-px border-l border-dashed border-[#8685F4] -translate-x-1/2 -z-10 hidden sm:block"></div>
+                            <div className="absolute left-5 top-10 h-full w-px border-l border-dashed border-[#8685F4] -translate-x-1/2 -z-10 block"></div>
 
                             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#EBE9FE] text-[#5A42DE] flex items-center justify-center font-bold text-lg ring-8 ring-white">
                                 1
                             </div>
                             <div>
                                 <p className="text-[#18181B] text-[14px]">
-                                    Create Your Surprise "Choose any amount. Set the unlock date—their birthday, your anniversary, graduation day, or any moment that matters. Write a personal message they'll see when it opens.""
+                                    Create Your Surprise "Choose any amount. Set the unlock date—their birthday, your anniversary, graduation day, or any moment that matters. Write a personal message they'll see when it opens."
                                 </p>
                             </div>
                         </div>
@@ -46,13 +46,14 @@ export default function HowItWorks() {
                         {/* Step 2 */}
                         <div className="flex gap-6 relative z-10">
                             {/* Dotted Line connecting to next step */}
-                            <div className="absolute left-5 top-10 h-full w-px border-l border-dashed border-[#8685F4] -translate-x-1/2 -z-10 hidden sm:block"></div>
+                            <div className="absolute left-5 top-10 h-full w-px border-l border-dashed border-[#8685F4] -translate-x-1/2 -z-10 block"></div>
 
                             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#EBE9FE] text-[#5A42DE] flex items-center justify-center font-bold text-lg ring-8 ring-white">
                                 2
                             </div>
                             <div>
                                 <p className="text-[#18181B] text-[14px]">
+
                                     Share From YOUR Phone "Send it via WhatsApp, Telegram, Instagram or even a QR code if you're together. It comes from YOUR account, so they know it's legit—not some random link."
                                 </p>
                             </div>
@@ -70,7 +71,7 @@ export default function HowItWorks() {
                             </div>
                         </div>
 
-                        <button className="px-8 h-[48px] w-fit font-bold bg-[#5A42DE] text-white rounded-[8px] font-semibold">
+                        <button className="px-8 h-[48px] w-full lg:w-fit font-bold bg-[#5A42DE] text-white rounded-[8px] font-semibold">
                             Join the wait list
                         </button>
                     </div>
