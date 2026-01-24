@@ -1,48 +1,61 @@
+@import "tailwindcss";
+
 :root {
   --background: #ffffff;
-  --background-rgb: 255, 255, 255;
   --foreground: #171717;
-  --foreground-rgb: 23, 23, 23;
-  --primary: #000000;
-  --secondary: #666666;
-  --accent: #333333;
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --background-rgb: 0, 0, 0;
-    --foreground: #ffffff;
-    --foreground-rgb: 255, 255, 255;
-    --primary: #ffffff;
-    --secondary: #999999;
-    --accent: #cccccc;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* Custom Utilities for Animations that match tailwind config extension */
+@theme {
+  --animate-bounce-slow: bounce-slow 3s infinite;
+  --animate-float: float 4s ease-in-out infinite;
+  --font-br-firma: var(--font-br-firma);
+  --font-cherry-bomb-one: var(--font-cherry-bomb-one);
+  --font-work-sans: var(--font-work-sans);
+
+  @keyframes bounce-slow {
+
+    0%,
+    100% {
+      transform: translateY(-5%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }
 
-html,
 body {
-  max-width: 100vw;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-br-firma) !important;
   overflow-x: hidden;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+button {
+  cursor: pointer;
 }

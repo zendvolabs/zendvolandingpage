@@ -1,29 +1,17 @@
-import { Navbar } from "@/components/Navbar";
-import { Button } from "@/components/Button";
-import styles from "./page.module.css";
+import Hero from "@/components/sections/Hero";
+import Intro from "@/components/sections/Intro";
+import HowItWorks from "@/components/sections/HowItWorks";
+import Navbar from "@/components/layout/Navbar";
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen bg-white">
       <Navbar />
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <div className={styles.badge}>Coming Soon</div>
-          <h1 className={styles.title}>Zendvo</h1>
-          <p className={styles.description}>
-            The future of decentralized finance, simplified. Experience a
-            borderless, secure, and high-yield ecosystem designed for everyone.
-          </p>
-          <div className={styles.cta}>
-            <Button variant="primary" size="lg">
-              Join the Waitlist
-            </Button>
-            <Button variant="outline" size="lg">
-              Explore Docs
-            </Button>
-          </div>
-        </main>
-      </div>
-    </>
+      <main className="pt-20">
+        <Hero />
+        <Intro />
+        <HowItWorks />
+      </main>
+    </div>
   );
 }
