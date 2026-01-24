@@ -16,6 +16,9 @@
 @theme {
   --animate-bounce-slow: bounce-slow 3s infinite;
   --animate-float: float 4s ease-in-out infinite;
+  --font-br-firma: var(--font-br-firma);
+  --font-cherry-bomb-one: var(--font-cherry-bomb-one);
+  --font-work-sans: var(--font-work-sans);
 
   @keyframes bounce-slow {
 
@@ -49,6 +52,10 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-work-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-br-firma) !important;
   overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
 }

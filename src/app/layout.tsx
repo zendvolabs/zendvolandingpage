@@ -1,10 +1,39 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
+import localFont from "next/font/local";
+import { Cherry_Bomb_One, Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const workSans = Work_Sans({
-  variable: "--font-work-sans",
+const brFirma = localFont({
+  src: [
+    {
+      path: "../../public/fonts/br-firma/BR Firma Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/br-firma/BR Firma SemiBold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/br-firma/BR Firma Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-br-firma",
+});
+
+const cherryBombOne = Cherry_Bomb_One({
+  variable: "--font-cherry-bomb-one",
   subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable} font-sans antialiased`}>
+      <body className={`${workSans.variable} ${brFirma.variable} ${cherryBombOne.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
