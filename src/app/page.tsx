@@ -2,6 +2,9 @@ import Hero from "@/components/sections/Hero";
 import Intro from "@/components/sections/Intro";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Navbar from "@/components/layout/Navbar";
+import { CtaBanner } from "@/components/sections/CtaBanner";
+import { Faqs } from "@/components/sections/FaqSection";
+import { WhyWaitList } from "@/components/sections/WhyWaitList";
 
 export default function Home() {
   return (
@@ -11,6 +14,9 @@ export default function Home() {
         <Hero />
         <Intro />
         <HowItWorks />
+        <WhyWaitList/>
+        <Faqs/>
+        <CtaBanner/>
       </main>
     </div>
   );

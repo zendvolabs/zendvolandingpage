@@ -19,7 +19,7 @@ export default function Navbar() {
                     <Link href="#">Contact</Link>
                 </nav>
 
-                <button className="hidden md:flex px-4 h-[40px] text-[18px] items-center justify-center bg-[#5A42DE] text-white rounded-[8px] font-br-firma font-bold transition-colors">
+                <button className="hidden md:flex px-4 h-10 text-[18px] items-center justify-center bg-[#5A42DE] text-white rounded-lg font-br-firma font-bold transition-colors">
                     Join the wait list
                 </button>
 
