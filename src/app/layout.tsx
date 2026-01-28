@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Cherry_Bomb_One, Work_Sans } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/layout/Footer";
 
 const brFirma = localFont({
   src: [
@@ -50,6 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${workSans.variable} ${brFirma.variable} ${cherryBombOne.variable} font-sans antialiased`}>
         {children}
+        <Footer/>
       </body>
     </html>
   );
