@@ -22,17 +22,65 @@ export const Faqs =()=>{
       <div className="max-w-300 flex mx-auto  items-center gap-10 xl:gap-20 flex-col lg:flex-row">
         <div className="space-y-6 lg:max-w-198 xl:max-w-none  w-full lg:w-198 xl:w-fit">
           <div className="space-y-2">
-            <h6 className="text-[#18181B] gap-2 flex font-bold text-[3.5rem] leading-[100%]">
-              FAQ{" "}
-              <span>
+            <motion.h6
+            initial={{
+              x1:-20,
+              opacity:0
+            }}
+            whileInView={{
+              x1:0,opacity:1
+            }}
+            viewport={{once:true,amount:0.5}}
+            transition={{ease:"easeInOut",duration:0.4}}
+            className="text-[#18181B] gap-2 flex font-bold text-[3.5rem] leading-[100%]">
+              FAQ
+              <motion.span
+              initial={{
+                scale:0,
+                rotate:30,
+                opacity:0
+              }}
+              whileInView={{
+                scale:1,
+                rotate:0,
+                opacity:1
+              }}
+              >
                 <FaqIcon />
-              </span>
-            </h6>
-            <p className="text-lg leading-6 font-medium">
-              Everything You're Wondering
-            </p>
+              </motion.span>
+            </motion.h6>
+            <motion.p
+            initial={{
+              y2:20,opacity:0
+            }}
+            whileInView={{
+              y2:0,
+              opacity:1
+            }}
+            transition={{
+              duration:0.5,ease:"easeInOut"
+            }}
+            viewport={{
+              once:true,amount:0.6
+            }}
+            className="text-lg leading-6 font-medium">
+              Everything You&apos;re Wondering
+            </motion.p>
           </div>
-          <Image
+         <motion.div
+         initial={{
+          y:20,
+          opacity:0
+         }}
+         whileInView={{
+          y:0,
+          opacity:1
+         }}
+         transition={{
+          duration:0.6,ease:"easeInOut",delay:0.4
+         }}
+         >
+           <Image
             src={FaqGirlImage.src}
             alt="girl smiling"
             width={FaqGirlImage.width}
@@ -40,6 +88,7 @@ export const Faqs =()=>{
             blurDataURL={FaqGirlImage.blurDataURL}
             className="rounded-4xl h-129 w-auto lg:w-97 object-cover hidden lg:inline-block "
           />
+         </motion.div>
         </div>
         <div className="space-y-6 w-full  max-w-198">
           {Array.from({ length: 5 }).map((_, index) => (
@@ -103,8 +152,8 @@ const FaqItem: FC<FaqItemProps> = ({ isOpen = false, handleClick }) => {
             className="overflow-hidden"
           >
             <p className="mt-8 text-sm font-medium text-[#71717A]">
-              We're still in development and testing. Waitlist members will get
-              first access as soon as we're ready. Join to be notified
+              We&apos;re still in development and testing. Waitlist members will get
+              first access as soon as we&apos;re ready. Join to be notified
               immediately when we go live.
             </p>
           </motion.div>
